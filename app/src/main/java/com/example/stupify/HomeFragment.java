@@ -76,8 +76,8 @@ public class HomeFragment extends Fragment implements SelectListener {
     interface RequestUser {
 
 
-        @Headers({"X-RapidAPI-Key: 0eb77712b3mshfeb36b8de4fafecp171096jsn3d9b5741b96e",
-                "X-RapidAPI-Host: deezerdevs-deezer.p.rapidapi.com"
+        @Headers({"X-RapidAPI-Key: [YOUR API KEY]",
+                "X-RapidAPI-Host: [YOUR API HOST]"
         })
 
         @GET("search")
@@ -302,15 +302,5 @@ public class HomeFragment extends Fragment implements SelectListener {
 
     }
 
-    public void test() throws IOException {
-
-        URL url = new URL("https://api.geoapify.com/v1/routing?waypoints=50.96209827745463%2C4.414458883409225%7C50.429137079078345%2C5.00088081232559&mode=drive&apiKey=0a5e50a290fd4522a8cdc7413beefe24");
-        HttpURLConnection http = (HttpURLConnection)url.openConnection();
-        http.setRequestProperty("Accept", "application/json");
-
-        System.out.println(http.getResponseCode() + " " + http.getResponseMessage());
-        http.disconnect();
-
-}
 
 }

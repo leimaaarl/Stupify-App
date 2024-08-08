@@ -52,8 +52,8 @@ public class PlayBack extends AppCompatActivity {
 
     int port = 587;
 
-    String senderEmail = "luaresleimarl@gmail.com";
-    String password = "eknntmumgrooljtc";
+    String senderEmail = "[YOUR GMAIL ACCOUNT]";
+    String password = "[YOUR GMAIL APP PASSWORD]";
 
 
     String smtpHost = "smtp.gmail.com";
