@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16117435985",
+    "project_id": "stupifydatabase",
+    "storage_bucket": "stupifydatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16117435985:android:89a2a1f6b58ca585493270",
+        "android_client_info": {
+          "package_name": "com.example.stupify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqiIyl5E9e3D7GTHmd9tkemZq64TJrC1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

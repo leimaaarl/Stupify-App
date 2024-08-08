@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/white"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/grey"
+            >
+            <TextView
+                android:id="@+id/placeholder"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+
+                android:text="Stupify Music"
+                android:fontFamily="sans-serif-condensed"
+                android:autoSizeMinTextSize="15sp"
+                android:autoSizeMaxTextSize="45sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search songs:"
+                android:textColor="#C6C5C5"
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                >
+                <EditText
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/search_text"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:textSize="14sp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Enter a song or artist"
+                    android:paddingRight="60dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#C6C5C5"
+                    />
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_dark_background"
+                    />
+
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Search"
+                    android:backgroundTint="@color/yellow"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="#5F6363">
+
+            <ImageView
+                android:id="@+id/tophits"
+                android:layout_marginLeft="30dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_height="150dp"
+                android:src="@drawable/cover"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
