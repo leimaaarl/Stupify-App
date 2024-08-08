@@ -20,8 +20,7 @@ import android.widget.TextView;
 
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
+
 import java.util.ArrayList;
 
 import java.util.concurrent.ExecutorService;
@@ -33,8 +32,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -143,12 +140,6 @@ public class HomeFragment extends Fragment implements SelectListener {
 
 
         executor.execute(new ScrapeTask());
-
-        try {
-            test();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
 
         return view;
 
