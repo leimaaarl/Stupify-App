@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "16117435985",
-    "project_id": "stupifydatabase",
+    "project_number": "[YOUR_KEY]",
+    "project_id": "[FIREBASE_DATABASE]",
     "storage_bucket": "stupifydatabase.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:16117435985:android:89a2a1f6b58ca585493270",
+        "mobilesdk_app_id": "[YOUR_KEY]",
         "android_client_info": {
           "package_name": "com.example.stupify"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCqiIyl5E9e3D7GTHmd9tkemZq64TJrC1E"
+          "current_key": "[YOUR_KEY]"
         }
       ],
       "services": {
